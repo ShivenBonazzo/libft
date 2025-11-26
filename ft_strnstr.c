@@ -1,26 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/24 19:48:00 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/24 20:24:35 by rarriola         ###   ########.fr       */
+/*   Created: 2025/11/26 16:30:12 by rarriola          #+#    #+#             */
+/*   Updated: 2025/11/26 17:16:46 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	while (*str)
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	if (little[0] == '\0')
+		return ((char *)big);
+	while (big[i] && i < len)
 	{
-		if (*(unsigned char *)str == (unsigned char)c)
-			last == ((char *)str);
-		str++;
+		j = 0;
+		while (big[i + j] != '\0'
+			&& big[i + j] == little[j] && i + j < len)
+		{
+			if (little[j + 1] == '\0')
+				return ((char *)&big[i]);
+			++j;
+		}
+		++i;
 	}
-	if (*(unsigned char *)str == (unsigned char)c)
-		return ((char *)str);
-	return (last);
+	return (NULL);
 }

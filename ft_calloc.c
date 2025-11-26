@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/24 19:48:00 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/24 20:24:35 by rarriola         ###   ########.fr       */
+/*   Created: 2025/11/26 17:24:27 by rarriola          #+#    #+#             */
+/*   Updated: 2025/11/26 17:29:02 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+void	*calloc(size_t nitems, size_t size)
 {
-	while (*str)
-	{
-		if (*(unsigned char *)str == (unsigned char)c)
-			last == ((char *)str);
-		str++;
-	}
-	if (*(unsigned char *)str == (unsigned char)c)
-		return ((char *)str);
-	return (last);
+	size_t	sum;
+	void	*p;
+
+	sum = nitems * size;
+	p = malloc(sum);
+	if (!p)
+		return (NULL);
+	ft_memset(p, 0, sum);
+	return (p);
 }
