@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void    *memchr(const void *str, int c, size_t n)
+void	*memchr(const void *str, int c, size_t n)
 {
     const unsigned char *s;
 
@@ -26,4 +26,17 @@ void    *memchr(const void *str, int c, size_t n)
     }
     return (NULL);
 }
- 
+
+/*
+int main()
+{
+    char *c;
+    char *i;
+    c = (char *)memchr("ciao come stai", 'e', 10);
+    i = (char *)memchr("ciao come stai", 'e', 6);
+    
+    printf("%s", c);
+    printf("\n");
+    printf("%s", i);
+}
+*/

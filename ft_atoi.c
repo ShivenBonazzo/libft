@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 22:37:47 by rarriola          #+#    #+#             */
-/*   Updated: 2025/10/26 22:39:42 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/11/26 22:30:05 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(char *str)
 {
@@ -34,3 +36,10 @@ int	ft_atoi(char *str)
 	}
 	return (segno * sum);
 }
+
+/*
+int main()
+{
+printf("%i", ft_atoi("  --+-123445566"));
+}
+*/
