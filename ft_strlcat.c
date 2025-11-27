@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 16:03:13 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/26 18:37:33 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/11/27 18:24:02 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,16 @@ unsigned int	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[dest_len] = '\0';
 	return (sum);
 }
+
+/*
+safely concatenates strings with size limit
+*/
+
+/*
+int main()
+{
+	char dst[20] = "Hello";
+	ft_strlcat(dst, " my Brotha", 20);
+	printf("%s\n", dst);
+}
+*/

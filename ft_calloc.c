@@ -6,13 +6,13 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 17:24:27 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/26 17:29:02 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/11/27 18:24:37 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t nitems, size_t size)
+void	*ft_calloc(size_t nitems, size_t size)
 {
 	size_t	sum;
 	void	*p;
@@ -23,4 +23,14 @@ void	*calloc(size_t nitems, size_t size)
 		return (NULL);
 	ft_memset(p, 0, sum);
 	return (p);
+}
+//qspilvqaqqqq  llppppppppppppppp set=qp
+/*
+allocates memory and intializes all bytes to zero
+*/
+
+int main()
+{
+	int *arr = (int *)ft_calloc(5, sizeof(int));
+	printf("%i%i%i%i%i\n", arr[0], arr[1], arr[2], arr[3], arr[4]);
 }

@@ -28,6 +28,12 @@ void	*memchr(const void *str, int c, size_t n)
 }
 
 /*
+finds firt occurrence of a byte in a memory block
+can search past '\0'
+it searches ray bytes.
+*/
+
+/*
 int main()
 {
     char *c;

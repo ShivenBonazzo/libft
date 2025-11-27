@@ -27,3 +27,14 @@ char	*ft_strrchr(char *str, int c)
         return ((char *)str);
     return (last);
 }
+
+/*
+finds last occurrence of a character in a string
+*/
+
+int main()
+{
+	char str[] = "Wassap Dawg";
+	char *ptr = strrchr(str, 's');
+	printf("%s\n", ptr);
+}

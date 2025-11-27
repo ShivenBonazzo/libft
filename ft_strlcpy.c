@@ -1,45 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/03 16:28:26 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/27 18:24:41 by rarriola         ###   ########.fr       */
+/*   Created: 2025/11/27 17:17:31 by rarriola          #+#    #+#             */
+/*   Updated: 2025/11/27 18:24:04 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *src)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	char	*dest;
-	int	i;
-	int	lenght;
+	size_t	i;
 
-	lenght = ft_strlen(src);
-	dest = (char *) malloc(sizeof(char) * (lenght + 1));
-	if (dest == NULL)
-		return (NULL);
 	i = 0;
-	while (i < lenght)
+	if (size > 0)
 	{
-		dest[i] = src[i];
-		i++;
+		while (src[i] && i < size - 1)
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (ft_strlen(src));
 }
 
 /*
-duplicates a string by allocating new memory
+safely copies a string with guaranteed null-termination
 */
 
+/*
 int main()
 {
-	char *original = "Wassap";
-	char *copy = strdup(original);
-	printf("%s\n", copy);
-	free(copy);
+	char dest[10];
+	ft_strlcpy(dest, "Hello my Brotha", 13);
+	printf("%s\n", dest);
 }
+*/
