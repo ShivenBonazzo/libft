@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 18:23:12 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/26 23:23:12 by marvin           ###   ########.fr       */
+/*   Updated: 2025/11/27 11:39:33 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		*pdest++ = *psrc++;
 	return (dest);
 }
+
+/*
+copies bytes from source to destination (no overlap allowed)
+*/
 
 /*
 int main()
