@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 16:30:12 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/27 18:24:24 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/11/28 09:46:05 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 finds first occurrence of substring within n characters
 */
 
-int main()
+/* int main()
 {
 	char str[] = "Wassap my Dawg, that's how we do it";
 	char *ptr = ft_strnstr(str, "Dawg", 5);
 	char *ptr2 = ft_strnstr(str, "Dawg", 14);
 	printf("%s\n", ptr);
 	printf("%s\n", ptr2);
-}
+} */

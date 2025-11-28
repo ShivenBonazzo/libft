@@ -14,27 +14,27 @@
 
 char	*ft_strrchr(char *str, int c)
 {
-    char    *last;
+	char	*last;
 
-    last = NULL;
-    while (*str)
-    {
-        if (*(unsigned char *)str == (unsigned char)c)
-            last = ((char *)str);
-        str++;
-    }
-    if (*(unsigned char *)str == (unsigned char)c)
-        return ((char *)str);
-    return (last);
+	last = NULL;
+	while (*str)
+	{
+		if (*(unsigned char *)str == (unsigned char)c)
+			last = ((char *)str);
+		str++;
+	}
+	if (*(unsigned char *)str == (unsigned char)c)
+		return ((char *)str);
+	return (last);
 }
 
 /*
 finds last occurrence of a character in a string
 */
 
-int main()
+/* int main()
 {
 	char str[] = "Wassap Dawg";
 	char *ptr = strrchr(str, 's');
 	printf("%s\n", ptr);
-}
+} */

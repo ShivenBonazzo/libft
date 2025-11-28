@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 19:48:00 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/27 18:24:11 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/11/28 09:49:39 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ finds first occurrence of a character in a string
 it stops with the term '\0'
 */
 
-int main()
+/* int main()
 {
 	char str[] = "Yo Wassap my Dawg";
 	char *ptr = strchr(str, 'W');
 	printf("%s/n", ptr);
-}
+} */

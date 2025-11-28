@@ -14,23 +14,23 @@
 
 void	*memchr(const void *str, int c, size_t n)
 {
-    const unsigned char *s;
+	const unsigned char	*s;
 
-    s = str;
-    while (n > 0)
-    {
-        if (*s == (unsigned char)c)
-            return ((void *)s);
-        s++;
-        n--;
-    }
-    return (NULL);
+	s = str;
+	while (n > 0)
+	{
+		if (*s == (unsigned char)c)
+			return ((void *)s);
+		s++;
+		n--;
+	}
+	return (NULL);
 }
 
 /*
-finds firt occurrence of a byte in a memory block
+finds first occurrence of a byte in a memory block
 can search past '\0'
-it searches ray bytes.
+it searches raw bytes.
 */
 
 /*

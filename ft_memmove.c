@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 18:29:33 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/27 18:24:35 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/11/28 11:26:14 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,9 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 like memcpy but handles overlapping memory safe
 */
 
+/* int main()
+{
+	char str[] = "Hello World";
+	ft_memmove(str + 2, str, 5);
+	printf("%s\n", str);
+}  */

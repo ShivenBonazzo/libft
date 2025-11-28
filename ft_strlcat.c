@@ -6,13 +6,13 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 16:03:13 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/27 18:24:02 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/11/28 09:45:49 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlcat(char *dest, const char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	dest_len;
@@ -26,22 +26,20 @@ unsigned int	ft_strlcat(char *dest, const char *src, size_t size)
 	if (size > dest_len)
 		sum = dest_len + src_len;
 	else
-		return (src_len + src_len);
+		return (src_len + size);
 	while (src[i] && (dest_len + 1) < size)
 		dest[dest_len++] = src[i++];
 	dest[dest_len] = '\0';
 	return (sum);
 }
 
-/*
+/* 
 safely concatenates strings with size limit
-*/
+ */
 
-/*
-int main()
+/* int main()
 {
 	char dst[20] = "Hello";
-	ft_strlcat(dst, " my Brotha", 20);
+	ft_strlcat(dst, " my Brotha", 10);
 	printf("%s\n", dst);
-}
-*/
+} */

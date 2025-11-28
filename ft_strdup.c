@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 16:28:26 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/27 18:24:41 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/11/28 09:49:57 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_strdup(const char *src)
 {
 	char	*dest;
-	int	i;
-	int	lenght;
+	int		i;
+	int		lenght;
 
 	lenght = ft_strlen(src);
 	dest = (char *) malloc(sizeof(char) * (lenght + 1));
@@ -36,10 +36,10 @@ char	*ft_strdup(const char *src)
 duplicates a string by allocating new memory
 */
 
-int main()
+/* int main()
 {
 	char *original = "Wassap";
 	char *copy = strdup(original);
 	printf("%s\n", copy);
 	free(copy);
-}
+} */
