@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/01 10:51:43 by rarriola          #+#    #+#             */
-/*   Updated: 2025/12/01 11:47:25 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/12/02 10:01:13 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
-
 /* Applies the function 'f' to each character of the string passed
 as argument, passing its index as the first argument. Each character
 is passed by addrress to 'f' so it can be modified if necessary */
-
 
 /* static void character(unsigned int index, char *s)
 {

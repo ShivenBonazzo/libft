@@ -1,20 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/01 22:53:24 by marvinbobw.       #+#    #+#             */
-/*   Updated: 2025/12/02 10:08:12 by rarriola         ###   ########.fr       */
+/*   Created: 2025/12/02 16:19:23 by rarriola          #+#    #+#             */
+/*   Updated: 2025/12/02 16:28:47 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	if (!s)
+	t_list	*curr;
+
+	if (!lst || !new)
 		return ;
-	write(fd, s, ft_strlen(s));
+	if (!*lst)
+		*lst = new;
+	else
+	{
+		curr = *lst;
+		while (curr->next)
+			curr = curr->next;
+		curr->next = new;
+	}
 }
+
+/*
+adds the node 'new' at the end of the list
+*/
