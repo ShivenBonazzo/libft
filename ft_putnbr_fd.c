@@ -6,13 +6,13 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/01 23:08:13 by marvinbobw.       #+#    #+#             */
-/*   Updated: 2025/12/02 10:06:02 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/12/02 19:06:35 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnubr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	long int	l;
 

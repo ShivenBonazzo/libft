@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 17:24:27 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/28 09:51:01 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/12/02 18:50:34 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,21 @@
 
 void	*ft_calloc(size_t nitems, size_t size)
 {
-	size_t	sum;
-	void	*p;
+	size_t			i;
+	void			*res;
+	unsigned char	*temp;
 
-	sum = nitems * size;
-	p = malloc(sum);
-	if (!p)
+	i = 0;
+	res = malloc(size * nitems);
+	if (!res)
 		return (NULL);
-	ft_memset(p, 0, sum);
-	return (p);
+	temp = (unsigned char *)res;
+	while (i < size * nitems)
+	{
+		temp[i] = 0;
+		i ++;
+	}
+	return ((void *)res);
 }
 
 /*
