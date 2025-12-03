@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 22:37:47 by rarriola          #+#    #+#             */
-/*   Updated: 2025/12/03 11:13:41 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/12/03 22:18:41 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,5 @@ int	ft_atoi(const char *str)
 
 /* int main()
 {
-printf("%i", ft_atoi("  --+-123445566"));
+printf("%i", ft_atoi("  -123445566"));
 } */

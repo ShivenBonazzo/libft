@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 16:03:13 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/28 09:45:49 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/12/03 21:33:27 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,6 @@ safely concatenates strings with size limit
 /* int main()
 {
 	char dst[20] = "Hello";
-	ft_strlcat(dst, " my Brotha", 10);
+	ft_strlcat(dst, " my Brotha", 13);
 	printf("%s\n", dst);
 } */
