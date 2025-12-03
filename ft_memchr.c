@@ -33,8 +33,7 @@ can search past '\0'
 it searches raw bytes.
 */
 
-/*
-int main()
+/* int main()
 {
     char *c;
     char *i;
@@ -44,5 +43,4 @@ int main()
     printf("%s", c);
     printf("\n");
     printf("%s", i);
-}
-*/
+} */

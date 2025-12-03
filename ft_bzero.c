@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 18:14:11 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/27 11:37:48 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/12/03 11:13:48 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,12 @@ void	ft_bzero(void *str, size_t n)
 sets a block of memory to zero.
 */
 
-/*
-int main()
+/* int main()
 {
 	char *str = malloc(sizeof(char) * 10);
-	char str2[] = "ciao comes stai";
+	char str2[] = "ciao come stai";
 	ft_bzero(str, 10);
 	ft_bzero(str2, 4);
-	printf("%s", str);
-	printf("%s", str2);
-}
-*/
+	printf("%s\n", str);
+	printf("%s\n", str2 + 4);
+} */

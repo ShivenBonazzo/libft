@@ -6,7 +6,7 @@
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 17:46:00 by rarriola          #+#    #+#             */
-/*   Updated: 2025/11/27 18:24:19 by rarriola         ###   ########.fr       */
+/*   Updated: 2025/12/03 11:14:05 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,9 @@ void	*ft_memset(void *str, int c, size_t n)
 fills a block of memory with a specific byte value
 */
 
-/*
-int main()
+/* int main()
 {
 	char buffer[10];
 	memset(buffer, 'A', 10);
 	printf("%s", buffer);
-}
-*/
+} */
