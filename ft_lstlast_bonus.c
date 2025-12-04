@@ -1,40 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/24 18:23:12 by rarriola          #+#    #+#             */
-/*   Updated: 2025/12/04 10:55:56 by rarriola         ###   ########.fr       */
+/*   Created: 2025/12/02 16:11:24 by rarriola          #+#    #+#             */
+/*   Updated: 2025/12/04 10:20:11 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+t_list	*ft_lstlast(t_list *lst)
 {
-	unsigned char	*pdest;
-	unsigned char	*psrc;
-
-	if (!dest && !src)
+	if (!lst)
 		return (NULL);
-	pdest = (unsigned char *)dest;
-	psrc = (unsigned char *)src;
-	while (n--)
-		*pdest++ = *psrc++;
-	return (dest);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }
 
 /*
-copies bytes from source to destination (no overlap allowed)
+returns the last node of the list.
 */
 
-/* int main()
+/* int main (void)
 {
-	char *c;
-	char a[] = "ciao";
-	char b[] = "C";
-	c = (char *)ft_memcpy(a, b, 1);
-	printf("%s\n", c);
+	t_list *first_node = ft_lstnew("primo");
+	t_list *second_node = ft_lstnew("secondo ed ultimo");
+
+	first_node->next = second_node;
+	t_list *last_node = ft_lstlast(first_node);
+	printf("ultimo elemento: %s\n", (char *)last_node->content);
+
+	free(first_node);
+	free(second_node);
 } */

@@ -1,40 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rarriola <rarriola@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/24 18:23:12 by rarriola          #+#    #+#             */
-/*   Updated: 2025/12/04 10:55:56 by rarriola         ###   ########.fr       */
+/*   Created: 2025/12/02 16:05:41 by rarriola          #+#    #+#             */
+/*   Updated: 2025/12/04 10:15:02 by rarriola         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+int	ft_lstsize(t_list *lst)
 {
-	unsigned char	*pdest;
-	unsigned char	*psrc;
+	int	count;
 
-	if (!dest && !src)
-		return (NULL);
-	pdest = (unsigned char *)dest;
-	psrc = (unsigned char *)src;
-	while (n--)
-		*pdest++ = *psrc++;
-	return (dest);
+	count = 0;
+	while (lst)
+	{
+		count++;
+		lst = lst->next;
+	}
+	return (count);
 }
 
 /*
-copies bytes from source to destination (no overlap allowed)
+counts the number of nodes in the list
 */
 
-/* int main()
+/* int main(void)
 {
-	char *c;
-	char a[] = "ciao";
-	char b[] = "C";
-	c = (char *)ft_memcpy(a, b, 1);
-	printf("%s\n", c);
+	t_list *first_node = ft_lstnew("primo");
+	t_list *second_node = ft_lstnew("secondo");
+
+	first_node->next = second_node;
+
+	printf("%d\n", ft_lstsize(first_node));
+
+	free(first_node);
+	free(second_node);
 } */
