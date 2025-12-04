@@ -1,6 +1,7 @@
 Functions from <ctype.h> library
 
 ft_isascii - test for ASCII character.
+
 ft_isalnum - alphanumeric character test.
 ft_isalpha - alphabetic character test.
 ft_isdigit - decimal-digit character test.
