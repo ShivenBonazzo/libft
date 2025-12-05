@@ -31,7 +31,7 @@ SRC = ${PART1} ${PART2}
 OBJS = ${SRC:.c=.o}
 BONUS_OBJS = ${BONUS:.c=.o}
 
-CC = gcc
+CC = cc
 RM = rm -fr
 CFLAGS = -Wall -Wextra -Werror
 INCLUDE = -I .
@@ -44,8 +44,11 @@ $(NAME): ${OBJS}
 
 all: ${NAME}
 
+bonus: .bonus
+
 bonus: ${OBJS} ${BONUS_OBJS}
 		ar rcs ${NAME} ${OBJS} ${BONUS_OBJS}
+		touch .bonus
 
 clean:
 		${RM} ${OBJS} ${BONUS_OBJS}
@@ -55,4 +58,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
